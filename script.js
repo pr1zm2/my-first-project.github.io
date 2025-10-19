@@ -12,33 +12,32 @@ function toggleCard(card) {
     }
 }
 
-function showSection(sectionId, title) {
-
-    document.querySelectorAll("section.breeds").forEach(section => {
-        section.style.display = "none";
-    });
-
-    document.getElementById(sectionId).style.display = "block";
-
-    
-    document.querySelector("header h1").textContent = title;
-}
-
 function showDogs() {
-    showSection("dogs-section", "🐶 Собаки — наші друзі");
+    document.querySelector("header h1").textContent = "🐶 Собаки — наші друзі";
+    document.querySelector("#dogs-section").style.display = "block";
+    document.querySelector("#cats-section").style.display = "none";
+    document.querySelector("#rodents-section")?.style.display = "none";
 }
 
 function showCats() {
-    showSection("cats-section", "🐱 Коти — наші пухнасті друзі");
+    document.querySelector("header h1").textContent = "🐱 Коти — наші пухнасті друзі";
+    document.querySelector("#cats-section").style.display = "block";
+    document.querySelector("#dogs-section").style.display = "none";
+    document.querySelector("#rodents-section")?.style.display = "none";
 }
 
 function showRodents() {
-    showSection("rodents-section", "🐹 Гризуни — маленькі, але веселі улюбленці");
+    document.querySelector("header h1").textContent = "🐹 Гризуни — маленькі, веселі улюбленці";
+    document.querySelector("#rodents-section").style.display = "block";
+    document.querySelector("#dogs-section").style.display = "none";
+    document.querySelector("#cats-section").style.display = "none";
 }
 
+// Якщо сторінка ще в розробці
 function showMessage() {
-    alert("Вибачте, ця сторінка птахів ще в розробці 🛠️");
+    alert("Вибачте, ця сторінка ще в розробці 🛠️");
 }
+
 
 
 
