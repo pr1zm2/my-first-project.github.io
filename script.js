@@ -18,12 +18,14 @@ function showMessage() {
 
 function showCats() {
     document.querySelector("header h1").textContent = "🐱 Коти — наші пухнасті друзі";
-    document.querySelector("#main-content section").style.display = "none"; 
-    document.querySelector("#cats-section").style.display = "block"; 
+    document.querySelector("#cats-section").style.display = "block";
+    document.querySelector("#main-content section:not(#cats-section)").style.display = "none";
 }
 
 function showDogs() {
     document.querySelector("header h1").textContent = "🐶 Собаки — наші друзі";
-    document.querySelector("#cats-section").style.display = "none"; 
-    document.querySelector("#main-content section").style.display = "block"; 
+    document.querySelector("#dogs-section").style.display = "block";
+    document.querySelector("#main-content section:not(#dogs-section)").style.display = "none";
 }
+
+
