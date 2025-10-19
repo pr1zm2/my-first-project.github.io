@@ -7,7 +7,6 @@
 
 html, body {
     height: 100%;
-    margin: 0;
 }
 
 body {
@@ -18,11 +17,13 @@ body {
     min-height: 100vh;
 }
 
+
 .container {
     display: flex;
     flex: 1;
     width: 100%;
 }
+
 
 .sidebar {
     width: 200px;
@@ -34,7 +35,6 @@ body {
 
 .sidebar ul {
     list-style: none;
-    padding: 0;
 }
 
 .sidebar li {
@@ -47,12 +47,14 @@ body {
     background: #444;
 }
 
+
 .content {
     flex: 1;
     padding: 20px;
     text-align: center;
     padding-left: 220px;
 }
+
 
 .breed-list {
     display: flex;
@@ -62,15 +64,16 @@ body {
     margin-top: 20px;
 }
 
+
 .breed-card {
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 15px;
-    width: 300px;
+    width: 280px;
     text-align: center;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -79,15 +82,17 @@ body {
 .breed-card:hover {
     transform: scale(1.05);
 }
-.breed-card img,
-.breed-card .hidden-content img{
+
+
+.breed-card img {
     width: 100%;
-    aaspect-ratio: 4 / 3;        
-    object-fit: cover; 
+    height: 200px;         /* фіксована висота */
+    object-fit: cover;     /* рівномірне заповнення */
     border-radius: 10px;
     margin-bottom: 15px;
     display: block;
 }
+
 
 .hidden-content {
     display: none;
@@ -100,6 +105,7 @@ body {
     opacity: 1;
 }
 
+
 footer {
     padding: 20px;
     background: #333;
@@ -107,7 +113,6 @@ footer {
     text-align: center;
     font-size: 14px;
     width: 100%;
-    position: relative;
     margin-top: auto;
 }
 
