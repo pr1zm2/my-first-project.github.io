@@ -84,10 +84,11 @@ body {
 }
 
 
-.breed-card img {
+.breed-card img,
+.breed-card .hidden-content img{
     width: 100%;
-    height: 200px;         /* фіксована висота */
-    object-fit: cover;     /* рівномірне заповнення */
+    aspect-ratio: 4 / 3;       
+    object-fit: cover;    
     border-radius: 10px;
     margin-bottom: 15px;
     display: block;
@@ -124,6 +125,7 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
 
 
 
