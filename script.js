@@ -29,3 +29,4 @@ function showRodents() {
     document.querySelector("#cats-section").style.display = "none";
     document.querySelector("#main-content section").style.display = "block";() {
    
+
