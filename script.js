@@ -1,48 +1,47 @@
 document.addEventListener("DOMContentLoaded", function() {
 
+  
     function toggleCard(card) {
         const isExpanded = card.classList.contains("expanded");
+
+       
         document.querySelectorAll(".breed-card").forEach(c => {
             c.classList.remove("expanded");
-            c.querySelector(".hidden-content").style.display = "block";
         });
+
+       
         if (!isExpanded) {
             card.classList.add("expanded");
-            card.querySelector(".hidden-content").style.display = "block";
         }
     }
 
-    window.toggleCard = toggleCard; 
+    window.toggleCard = toggleCard;
+
+   
+    function showSection(sectionId, title) {
+        document.querySelector("header h1").textContent = title;
+        document.querySelectorAll(".animal-section").forEach(section => {
+            section.style.display = "none";
+        });
+        document.querySelector(sectionId).style.display = "block";
+    }
+
     window.showDogs = function() {
-        document.querySelector("header h1").textContent = "🐶 Собаки — наші друзі";
-        document.querySelector("#dogs-section").style.display = "block";
-        document.querySelector("#cats-section").style.display = "none";
-        document.querySelector("#rodents-section").style.display = "none";
+        showSection("#dogs-section", "🐶 Собаки — наші друзі");
     }
 
     window.showCats = function() {
-        document.querySelector("header h1").textContent = "🐱 Коти — наші пухнасті друзі";
-        document.querySelector("#cats-section").style.display = "block";
-        document.querySelector("#dogs-section").style.display = "none";
-        document.querySelector("#rodents-section").style.display = "none";
+        showSection("#cats-section", "🐱 Коти — наші пухнасті друзі");
     }
 
     window.showRodents = function() {
-        document.querySelector("header h1").textContent = "🐹 Гризуни — наші маленькі друзі";
-        document.querySelector("#rodents-section").style.display = "block";
-        document.querySelector("#dogs-section").style.display = "none";
-        document.querySelector("#cats-section").style.display = "none";
+        showSection("#rodents-section", "🐹 Гризуни — наші маленькі друзі");
     }
 
     window.showMessage = function() {
         alert("Вибачте, ця сторінка ще в розробці.");
     }
-
 });
-
-
-
-
 
 
 
