@@ -80,12 +80,13 @@ body {
     transform: scale(1.05);
 }
 .breed-card img,
-.breed-card .hidden-content img {
-    width: 100%;          
-    height: 220px;        
+.breed-card .hidden-content img{
+    width: 100%;
+    aaspect-ratio: 4 / 3;        
     object-fit: cover; 
     border-radius: 10px;
     margin-bottom: 15px;
+    display: block;
 }
 
 .hidden-content {
@@ -118,5 +119,6 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
 
 
