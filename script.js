@@ -24,9 +24,5 @@ function showDogs() {
     document.querySelector("#cats-section").style.display = "none";
     document.querySelector("#main-content section").style.display = "block";
 }
-function showRodents() {
-    document.querySelector("header h1").textContent = "🐹 Гризуни — наші маленькі, кмітливі та зубасті друзі";
-    document.querySelector("#cats-section").style.display = "none";
-    document.querySelector("#main-content section").style.display = "block";() {
-   
+
 
