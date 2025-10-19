@@ -22,16 +22,20 @@ function showCats() {
     document.querySelector("#main-content section:not(#cats-section)").style.display = "none";
 }
 
+function showRodents() {
+    document.querySelector("header h1").textContent = "Гавно";
+    document.querySelector("#cats-section").style.display = "block";
+    document.querySelector("#main-content section:not(#cats-section)").style.display = "none";
+}
+
 function showDogs() {
     document.querySelector("header h1").textContent = "🐶 Собаки — наші друзі";
     document.querySelector("#dogs-section").style.display = "block";
     document.querySelector("#main-content section:not(#dogs-section)").style.display = "none";
 }
 
-function showRodents() {
-    document.querySelector("header h1").textContent = "Гавно";
-    document.querySelector("#dogs-section").style.display = "block";
-    document.querySelector("#main-content section:not(#dogs-section)").style.display = "none";
+
+
 
 
 
