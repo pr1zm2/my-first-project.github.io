@@ -59,7 +59,7 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-    margin-top: 20px; /* Сдвигаем карточки чуть ниже текста */
+    margin-top: 20px;
 }
 
 .breed-card {
@@ -79,11 +79,12 @@ body {
 .breed-card:hover {
     transform: scale(1.05);
 }
-
 .breed-card img {
-    width: 100%;
+    width: 100%;          
+    height: 220px;        
+    object-fit: cover; 
     border-radius: 10px;
-    margin-bottom: 15px; /* Добавляем отступ снизу, чтобы текст не прилегал к изображению */
+    margin-bottom: 15px;
 }
 
 .hidden-content {
@@ -116,3 +117,4 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
