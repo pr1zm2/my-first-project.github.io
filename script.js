@@ -17,7 +17,7 @@ function showMessage() {
 }
 
 function showRodents() {
-    document.querySelector("header h1").textContent = "Гавно";
+    document.querySelector("header h1").textContent = "🐹 Гризуни — наші маленькі, кмітливі та зубасті друзі";
     document.querySelector("#cats-section").style.display = "block";
     document.querySelector("#main-content section:not(#cats-section)").style.display = "none";
 }
@@ -33,6 +33,7 @@ function showDogs() {
     document.querySelector("#dogs-section").style.display = "block";
     document.querySelector("#main-content section:not(#dogs-section)").style.display = "none";
 }
+
 
 
 
