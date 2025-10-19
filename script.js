@@ -28,4 +28,10 @@ function showDogs() {
     document.querySelector("#main-content section:not(#dogs-section)").style.display = "none";
 }
 
+function showRodents() {
+    document.querySelector("header h1").textContent = "Гавно";
+    document.querySelector("#dogs-section").style.display = "block";
+    document.querySelector("#main-content section:not(#dogs-section)").style.display = "none";
+
+
 
