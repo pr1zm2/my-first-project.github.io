@@ -12,14 +12,14 @@ function toggleCard(card) {
     }
 }
 
+function showMessage() {
+    alert("Вибачте, ця сторінка ще в розробці.");
+}
+
 function showRodents() {
     document.querySelector("header h1").textContent = "Гавно";
     document.querySelector("#cats-section").style.display = "block";
     document.querySelector("#main-content section:not(#cats-section)").style.display = "none";
-}
-
-function showMessage() {
-    alert("Вибачте, ця сторінка ще в розробці.");
 }
 
 function showCats() {
@@ -33,6 +33,7 @@ function showDogs() {
     document.querySelector("#dogs-section").style.display = "block";
     document.querySelector("#main-content section:not(#dogs-section)").style.display = "none";
 }
+
 
 
 
