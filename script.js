@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const isExpanded = card.classList.contains("expanded");
         document.querySelectorAll(".breed-card").forEach(c => {
             c.classList.remove("expanded");
-            c.querySelector(".hidden-content").style.display = "none";
+            c.querySelector(".hidden-content").style.display = "block";
         });
         if (!isExpanded) {
             card.classList.add("expanded");
@@ -39,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
 });
+
 
 
 
