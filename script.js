@@ -12,20 +12,18 @@ function toggleCard(card) {
     }
 }
 
-function showDogs() {
-    document.querySelector("header h1").textContent = "🐶 Собаки — наші друзі";
-    document.querySelector("#dogs-section").style.display = "block";
-    document.querySelector("#cats-section").style.display = "none";
-    document.querySelector("#rodents-section")?.style.display = "none";
+function showMessage() {
+    alert("Вибачте, ця сторінка ще в розробці.");
 }
 
 function showCats() {
     document.querySelector("header h1").textContent = "🐱 Коти — наші пухнасті друзі";
-    document.querySelector("#cats-section").style.display = "block";
-    document.querySelector("#dogs-section").style.display = "none";
-    document.querySelector("#rodents-section")?.style.display = "none";
+    document.querySelector("#main-content section").style.display = "none"; 
+    document.querySelector("#cats-section").style.display = "block"; 
 }
 
-function showMessage() {
-    alert("Вибачте, ця сторінка ще в розробці 🛠");
-
+function showDogs() {
+    document.querySelector("header h1").textContent = "🐶 Собаки — наші друзі";
+    document.querySelector("#cats-section").style.display = "none"; 
+    document.querySelector("#main-content section").style.display = "block"; 
+}
