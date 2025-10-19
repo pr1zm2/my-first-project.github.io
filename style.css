@@ -79,7 +79,8 @@ body {
 .breed-card:hover {
     transform: scale(1.05);
 }
-.breed-card img {
+.breed-card img,
+.breed-card .hidden-content img {
     width: 100%;          
     height: 220px;        
     object-fit: cover; 
@@ -117,4 +118,5 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
 
