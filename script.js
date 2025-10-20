@@ -1,14 +1,15 @@
 function toggleCard(card) {
+    const hiddenContent = card.querySelector(".hidden-content");
     const isExpanded = card.classList.contains("expanded");
 
-    document.querySelectorAll(".breed-card").forEach(c => {
-        c.classList.remove("expanded");
-        c.querySelector(".hidden-content").style.display = "none";
-    });
-
-    if (!isExpanded) {
+    if (isExpanded) {
+        
+        card.classList.remove("expanded");
+        hiddenContent.style.display = "none";
+    } else {
+        
         card.classList.add("expanded");
-        card.querySelector(".hidden-content").style.display = "block";
+        hiddenContent.style.display = "block";
     }
 }
 
@@ -33,6 +34,7 @@ function showDogs() {
     document.querySelector("#dogs-section").style.display = "block";
     document.querySelector("#main-content section:not(#dogs-section)").style.display = "none";
 }
+
 
 
 
