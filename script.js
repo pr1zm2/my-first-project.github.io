@@ -15,12 +15,7 @@ function toggleCard(card) {
 
 function showMessage() {
     alert("Вибачте, ця сторінка ще в розробці.");
-}
 
-function showRodents() {
-    document.querySelector("header h1").textContent = "🐹 Гризуни — наші маленькі, кмітливі та зубасті друзі";
-    document.querySelector("#rodents-section").style.display = "block";
-    document.querySelector("#main-content section:not(#rodents-section)").style.display = "none";
 }
 
 function showCats() {
@@ -34,6 +29,7 @@ function showDogs() {
     document.querySelector("#dogs-section").style.display = "block";
     document.querySelector("#main-content section:not(#dogs-section)").style.display = "none";
 }
+
 
 
 
