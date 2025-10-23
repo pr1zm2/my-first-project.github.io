@@ -6,7 +6,6 @@ function toggleCard(card) {
         
         card.classList.remove("expanded");
         hiddenContent.style.display = "none";
-    } else {
         
         card.classList.add("expanded");
         hiddenContent.style.display = "block";
@@ -34,6 +33,7 @@ function showDogs() {
     document.querySelector("#dogs-section").style.display = "block";
     document.querySelector("#main-content section:not(#dogs-section)").style.display = "none";
 }
+
 
 
 
